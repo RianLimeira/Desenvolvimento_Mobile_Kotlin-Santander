@@ -1,4 +1,4 @@
-#Variavies em Kotlin
+# Variavies em Kotlin
 
  - var: elementos podem ser alterados/modificados durante a execução - camelCase (ex: alunoEndereco)
  - val: elementos não podem ser alterados durante a execução - camelCase (ex: alunoNota)
