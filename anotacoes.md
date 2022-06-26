@@ -60,3 +60,11 @@ ___
  - else: senão
  - when: quando, case1 -> {} ..etc
  - elvis operator: verificar se é nulo ou não, exemplo, "var number = a ?: 0", utilizado para retirar o valor nulo, e substituir por algo no lugar
+
+# Estrutura de repetição
+ - while: enquanto acontecer algo, faça algo
+ - do..while: verifica se ocorre a condição para repetir, depois de verificar pela primeira vez
+ - for: para algo acontecer, faça algo
+ - forEach: para cada elemento (array), faça algo
+ ___
+ 
