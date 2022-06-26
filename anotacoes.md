@@ -28,8 +28,8 @@ OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
 # Operadores Lógicos
 |Função|Expressão|Casos                                                                                                      |
 |---   |---      |---                                                                                                        |
-|E     | "&&"    |nesse caso toda a afirmação é verdadeira, caso uma das partes for falso, retorna False                     |
-|Ou    | "| |"    |avalia se uma das partes é verdadeira, para retornar True, caso todas as partes forem falsa, retorna False |
+|E     | `&&`    |nesse caso toda a afirmação é verdadeira, caso uma das partes for falso, retorna False                     |
+|Ou    | `||`    |avalia se uma das partes é verdadeira, para retornar True, caso todas as partes forem falsa, retorna False |
 
 # Manipulacao de Strings
  - podem ser concatenadas com o '+', mas não é totalmente seguro
