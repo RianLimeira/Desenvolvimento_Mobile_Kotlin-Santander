@@ -41,3 +41,10 @@ OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
  - remover espaços
  - substituição de caracter
  - formatação
+
+#Diferença entre Empty X Blank
+
+ - Metodos comparativos
+ - string vazia, branco ou nula
+ - o Empty, é para quando está vazio, exemplo ""
+ - o Blank, é para para quando está em branco, exemplo "  " ou ""(todos caracter estão em branco)
