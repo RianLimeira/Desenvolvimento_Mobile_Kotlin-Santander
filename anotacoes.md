@@ -9,11 +9,7 @@
  - utilizar a interrogação (?), exemplo: var month:Int? = null
  
 #Operadores Aritméticos
-|   |   |   |   |   |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+  _________________________________________________
  |  Função      | Expressão | Comando  | Atribuição|
  |--------------|-----------|----------|-----------|
  | soma:        |  +        |a.plus(b) |a+=b       |
@@ -21,5 +17,5 @@
  | multiplicação|  *        |a.times(b)|a*=b       |
  | divisão:     |  /        |a.div(b)  |a/=b       |
  | resto:       |  %        |a.mod(b)  |a%=b       |
- 
+  _________________________________________________
 OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
