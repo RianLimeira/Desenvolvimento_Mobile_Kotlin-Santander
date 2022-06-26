@@ -29,7 +29,7 @@ OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
 |Função|Expressão|Casos                                                                                                      |
 |---   |---      |---                                                                                                        |
 |E     | `&&`    |nesse caso toda a afirmação é verdadeira, caso uma das partes for falso, retorna False                     |
-|Ou    | ```||```    |avalia se uma das partes é verdadeira, para retornar True, caso todas as partes forem falsa, retorna False |
+|Ou    | ` | | `    |avalia se uma das partes é verdadeira, para retornar True, caso todas as partes forem falsa, retorna False |
 
 # Manipulacao de Strings
  - podem ser concatenadas com o '+', mas não é totalmente seguro
@@ -47,7 +47,7 @@ OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
  - Metodos comparativos
  - string vazia, branco ou nula
  - o Empty, é para quando está vazio, exemplo ""
- - o Blank, é para para quando está em branco, exemplo "  " ou ""(todos caracter estão em branco)
+ - o Blank, é para para quando está em branco, exemplo "    " ou ""(todos caracter estão em branco)
 
 ___
 # Funções
