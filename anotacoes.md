@@ -4,11 +4,11 @@
  - val: elementos não podem ser alterados durante a execução - camelCase (ex: alunoNota)
  - conta val: elementos não podem ser alterados, são totalmente fixos, e são somente alterados na compilação (durante a criação do código) - SNAKE_CASE (ex: IDADE_MINIMA e IDADE_MAXIMA)
 
-#Nullability
+# Nullability
  - permite valores determinados ou nulos
  - utilizar a interrogação (?), exemplo: var month:Int? = null
  
-#Operadores Aritméticos
+# Operadores Aritméticos
  |  Função      | Expressão | Comando  | Atribuição|
  |--------------|-----------|----------|-----------|
  | soma:        |  +        |a.plus(b) |a+=b       |
@@ -18,3 +18,9 @@
  | resto:       |  %        |a.mod(b)  |a%=b       |
 
 OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
+
+# Operadres Comparativos
+ - Maior/Menos: >(maior) <(menor)
+ - Maior/menor ou igual: >=(maior ou igual) ou <= (menor ou igual)
+ - igual: ==
+ - diferente: !=
