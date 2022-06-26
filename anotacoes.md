@@ -31,3 +31,13 @@ OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
 |E     | '&&'    |nesse caso toda a afirmação é verdadeira, caso uma das partes for falso, retorna False                     |
 |Ou    | '||'    |avalia se uma das partes é verdadeira, para retornar True, caso todas as partes forem falsa, retorna False |
 
+# Manipulacao de Strings
+ - podem ser concatenadas com o '+', mas não é totalmente seguro
+ - indexação
+ - tratada como um array
+ - fists(): visualiza a primeira posição (letra[0])
+ - last(): visualiza a ultima posição (letra.last) ou (letra.length-1) OBS: o length, verifica o tamanho da palavra(string)
+ - consegue deixar as letras todas minusculas ou maisculas
+ - remover espaços
+ - substituição de caracter
+ - formatação
