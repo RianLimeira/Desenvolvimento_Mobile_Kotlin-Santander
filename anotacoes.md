@@ -48,3 +48,8 @@ OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
  - string vazia, branco ou nula
  - o Empty, é para quando está vazio, exemplo ""
  - o Blank, é para para quando está em branco, exemplo "  " ou ""(todos caracter estão em branco)
+
+___
+# Funções
+ - utiliza prefixo "fun nomeDaFunção(nome:Tipo):TipoRetorno{}"
+ - reutilização e simplificação de códigos
