@@ -53,3 +53,10 @@ ___
 # Funções
  - utiliza prefixo "fun nomeDaFunção(nome:Tipo):TipoRetorno{}"
  - reutilização e simplificação de códigos
+___
+# Estrutura de controle
+ - if: se
+ - else if: senão se
+ - else: senão
+ - when: quando, case1 -> {} ..etc
+ - elvis operator: verificar se é nulo ou não, exemplo, "var number = a ?: 0", utilizado para retirar o valor nulo, e substituir por algo no lugar 
