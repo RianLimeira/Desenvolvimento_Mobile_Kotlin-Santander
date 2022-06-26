@@ -15,4 +15,5 @@
  - multiplicação|  *        |a.times(b)|a*=b
  - divisão:     |  /        |a.div(b)  |a/=b
  - resto:       |  %        |a.mod(b)  |a%=b
+ 
 OBS: a função soma, também serve para unir(concatenar) strings(textos/letras)
