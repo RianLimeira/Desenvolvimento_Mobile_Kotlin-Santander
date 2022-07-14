@@ -1,14 +1,5 @@
-class Pessoa {
-    var nome: String = "Rian"
-    var idade:Int = 20
-    private set
+open class Pessoa(
+    open val nome:String,
+    open val cpf:String
+)
 
-    constructor()
-
-    fun pessoaInfo() = "$nome tem $idade anos"
-}
-
-fun main(){
-    val rian = Pessoa()
-    println(rian.pessoaInfo())
-}
