@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dd27866-cc09-4f59-8e94-bbcd0709e3c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/TestArrayString.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/TestDoubleArray.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +12,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -36,9 +35,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.TestArrayStringKt">
+  <component name="RunManager" selected="Kotlin.TestDoubleArrayKt">
     <configuration name="TestArrayStringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="one.digitalinnovation.collections.TestArrayStringKt" />
+      <module name="collections-api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDoubleArrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="one.digitalinnovation.collections.TestDoubleArrayKt" />
       <module name="collections-api" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -60,6 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.TestDoubleArrayKt" />
         <item itemvalue="Kotlin.TestArrayStringKt" />
         <item itemvalue="Kotlin.TestIntArrayOfKt" />
         <item itemvalue="Kotlin.TestIntArrayKt" />
