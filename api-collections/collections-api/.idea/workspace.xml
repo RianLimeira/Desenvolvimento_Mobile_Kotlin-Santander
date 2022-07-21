@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dd27866-cc09-4f59-8e94-bbcd0709e3c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/Repositorio.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/TestMutavelMap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/collections-api/one/digitalinnovation/collections/Repositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/collections-api/one/digitalinnovation/collections/Repositorio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/collections-api/one/digitalinnovation/collections/TestMutavelMapKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/collections-api/one/digitalinnovation/collections/TestMutavelMapKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/Repositorio.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/Repositorio.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/TestMutavelMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/TestMutavelMap.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
