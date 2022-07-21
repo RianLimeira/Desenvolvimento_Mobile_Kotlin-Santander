@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dd27866-cc09-4f59-8e94-bbcd0709e3c2" name="Changes" comment="" />
+    <list default="true" id="8dd27866-cc09-4f59-8e94-bbcd0709e3c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/Repositorio.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/one/digitalinnovation/collections/TestMutavelMap.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +40,7 @@
     "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.TestColecoesMutaveisKt">
+  <component name="RunManager" selected="Kotlin.TestMutavelMapKt">
     <configuration name="TestColecoesMutaveisKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="one.digitalinnovation.collections.TestColecoesMutaveisKt" />
       <module name="collections-api" />
@@ -59,8 +62,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOperacoesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="one.digitalinnovation.collections.TestOperacoesKt" />
+    <configuration name="TestMutavelMapKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="one.digitalinnovation.collections.TestMutavelMapKt" />
       <module name="collections-api" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,11 +78,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.TestMutavelMapKt" />
         <item itemvalue="Kotlin.TestColecoesMutaveisKt" />
         <item itemvalue="Kotlin.TestMapKt" />
         <item itemvalue="Kotlin.TestSetKt" />
         <item itemvalue="Kotlin.TestListKt" />
-        <item itemvalue="Kotlin.TestOperacoesKt" />
       </list>
     </recent_temporary>
   </component>
