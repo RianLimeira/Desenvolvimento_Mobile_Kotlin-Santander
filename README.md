@@ -2,3 +2,4 @@
 Curso DIO Sanstander para aprendizado do desenvolvimento mobile utilizando o Kotlin
 
 Desenvolvimento e aprendizados em Kotlin
+   - Dsenvolvimento de app de partidas
