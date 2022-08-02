@@ -1,5 +1,7 @@
 package com.example.simulator.ui;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -58,6 +60,33 @@ public class MainActivity extends AppCompatActivity {
         //TODO LISTAR AS PARTIDAS, CONSUMINDO API
         binding.rvMatches.setHasFixedSize(true);
         binding.rvMatches.setLayoutManager(new LinearLayoutManager(this));
+        findMatchesFromApi();
+
+    }
+
+    private void setupMatchesRefresh() {
+        //TODO: ATUALIZAR AS PARTIDAS NA AÇÃO DE SWIPE
+        binding.srlMatches.setOnRefreshListener(this::findMatchesFromApi);
+    }
+
+    private void setupFloatingActionButton() {
+        //TODO: CRIAR EVENTO DE CLICK E SIMULÇÃO
+        binding.fabSimulator.setOnClickListener(view -> {
+            view.animate().rotationBy(360).setDuration(500).setListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                    //TODO Implementar o algoritimo de simulação de partidas
+                }
+            });
+        });
+    }
+
+    private void showErrorManager() {
+        Snackbar.make(binding.fabSimulator, R.string.error_api, Snackbar.LENGTH_LONG).show();
+    }
+
+    private void findMatchesFromApi() {
+        binding.srlMatches.setRefreshing(true);
         matchesApi.getMatches().enqueue(new Callback<List<Match>>() {
             @Override
             public void onResponse(Call<List<Match>> call, Response<List<Match>> response) {
@@ -69,26 +98,14 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     showErrorManager();
                 }
+                binding.srlMatches.setRefreshing(false);
             }
 
             @Override
             public void onFailure(Call<List<Match>> call, Throwable t) {
                 showErrorManager();
+                binding.srlMatches.setRefreshing(false);
             }
         });
-
-    }
-
-
-    private void setupMatchesRefresh() {
-        //TODO: ATUALIZAR AS PARTIDAS NA AÇÃO DE SWIPE
-    }
-
-    private void setupFloatingActionButton() {
-        //TODO: CRIAR EVENTO DE CLICK E SIMULÇÃO
-    }
-
-    private void showErrorManager() {
-        Snackbar.make(binding.fabSimulator, R.string.error_api, Snackbar.LENGTH_LONG).show();
     }
 }
