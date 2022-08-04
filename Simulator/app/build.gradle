@@ -2,7 +2,10 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
 }
+
+
 
 android {
     compileSdk 32
@@ -53,6 +56,9 @@ dependencies {
     // Glide (Image Loading): https://github.com/bumptech/glide
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
-
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:30.3.1')
+    // SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics-ktx'
 
 }

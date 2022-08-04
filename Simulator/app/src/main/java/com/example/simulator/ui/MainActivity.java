@@ -3,13 +3,11 @@ package com.example.simulator.ui;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
-import android.util.Log;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 
 import com.example.simulator.R;
 import com.example.simulator.data.MatchesApi;
@@ -18,9 +16,9 @@ import com.example.simulator.domain.Match;
 import com.example.simulator.ui.adapter.MatchAdapterJAVA;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-import java.util.logging.ErrorManager;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -32,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private MatchesApi matchesApi;
-    private MatchAdapterJAVA matchesAdapter;
+    private MatchAdapterJAVA matchesAdapter = new MatchAdapterJAVA(Collections.EMPTY_LIST);
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -58,25 +56,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupMatchesList() {
-        //TODO LISTAR AS PARTIDAS, CONSUMINDO API
+        /* TODO LISTAR AS PARTIDAS, CONSUMINDO API */
         binding.rvMatches.setHasFixedSize(true);
         binding.rvMatches.setLayoutManager(new LinearLayoutManager(this));
+
+        binding.rvMatches.setAdapter(matchesAdapter);
         findMatchesFromApi();
 
     }
 
     private void setupMatchesRefresh() {
-        //TODO: ATUALIZAR AS PARTIDAS NA AÇÃO DE SWIPE
+        /* TODO: ATUALIZAR AS PARTIDAS NA A&Ccedil;&Atilde;O DE SWIPE */
         binding.srlMatches.setOnRefreshListener(this::findMatchesFromApi);
     }
 
     private void setupFloatingActionButton() {
-        //TODO: CRIAR EVENTO DE CLICK E SIMULÇÃO
+        /* TODO: CRIAR EVENTO DE CLICK E SIMULÇÃO */
         binding.fabSimulator.setOnClickListener(view -> {
             view.animate().rotationBy(360).setDuration(500).setListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationCancel(Animator animation) {
-                    //TODO Implementar o algoritimo de simulação de partidas
+                    /* TODO Implementar o algoritimo de simulação de partidas */
                     Random random = new Random();
                     for (int i = 0; i< matchesAdapter.getItemCount(); i++){
                         Match match = matchesAdapter.getMatches().get(i);
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         binding.srlMatches.setRefreshing(true);
         matchesApi.getMatches().enqueue(new Callback<List<Match>>() {
             @Override
-            public void onResponse(Call<List<Match>> call, Response<List<Match>> response) {
+            public void onResponse(@NonNull Call<List<Match>> call, @NonNull Response<List<Match>> response) {
                 if (response.isSuccessful()){
                     List<Match> matches = response.body();
                     matchesAdapter = new MatchAdapterJAVA(matches);
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<Match>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<Match>> call, @NonNull Throwable t) {
                 showErrorManager();
                 binding.srlMatches.setRefreshing(false);
             }
