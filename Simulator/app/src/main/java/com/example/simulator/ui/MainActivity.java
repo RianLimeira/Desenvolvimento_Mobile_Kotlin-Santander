@@ -86,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
+            //Teste para crashlystics, forçando parada
+            //throw new RuntimeException("Teste Crash");
         });
     }
 

@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
     id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 
@@ -60,5 +61,9 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:30.3.1')
     // SDK for Google Analytics
     implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //Crashlytics
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
 
 }
